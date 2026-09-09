@@ -17,7 +17,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/virat.jpg"
+    "image": "/assets/virat.jpg"
   },
   {
     "id": 2,
