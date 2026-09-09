@@ -37,7 +37,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/public/assets/babar.jpg"
+    "image": "/assets/babar.jpg"
   },
   {
     "id": 3,
@@ -57,7 +57,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/shakib.jpg"
+    "image": "/assets/shakib.jpg"
   },
   {
     "id": 4,
@@ -77,7 +77,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/bumrah.jpg"
+    "image": "/assets/bumrah.jpg"
   },
   {
     "id": 5,
@@ -97,7 +97,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": false,
-    "image": "/public/assets/stokes.jpg"
+    "image": "/assets/stokes.jpg"
   },
   {
     "id": 6,
@@ -117,7 +117,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": false,
-    "image": "/public/assets/williamson.jpg"
+    "image": "/assets/williamson.jpg"
   },
   {
     "id": 7,
@@ -137,7 +137,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/public/assets/rashid.jpg"
+    "image": "/assets/rashid.jpg"
   },
   {
     "id": 8,
@@ -157,7 +157,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/public/assets/root.jpg"
+    "image": "/assets/root.jpg"
   },
   {
     "id": 9,
@@ -177,7 +177,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/public/assets/cummins.jpg"
+    "image": "/assets/cummins.jpg"
   },
   {
     "id": 10,
@@ -197,7 +197,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/public/assets/smith.jpg"
+    "image": "/assets/smith.jpg"
   },
   {
     "id": 11,
@@ -217,7 +217,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/public/assets/rizwan.jpg"
+    "image": "/assets/rizwan.jpg"
   },
   {
     "id": 12,
@@ -237,7 +237,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/rohit.jpg"
+    "image": "/assets/rohit.jpg"
   },
   {
     "id": 13,
@@ -257,7 +257,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/head.jpg"
+    "image": "/assets/head.jpg"
   },
   {
     "id": 14,
@@ -277,7 +277,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/buttler.jpg"
+    "image": "/assets/buttler.jpg"
   },
   {
     "id": 15,
@@ -297,7 +297,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/shaheen.jpg"
+    "image": "/assets/shaheen.jpg"
   },
   {
     "id": 16,
@@ -317,7 +317,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/starc.jpg"
+    "image": "/assets/starc.jpg"
   },
   {
     "id": 17,
@@ -337,7 +337,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/hardik.jpg"
+    "image": "/assets/hardik.jpg"
   },
   {
     "id": 18,
@@ -357,7 +357,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/public/assets/liton.jpg"
+    "image": "/assets/liton.jpg"
   },
   {
     "id": 19,
@@ -377,7 +377,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/public/assets/mustafizur.jpg"
+    "image": "/assets/mustafizur.jpg"
   },
   {
     
@@ -398,7 +398,7 @@
   "status": "Active",
   "isCaptain": false,
   "isFeatured": false,
-  "image": "/public/assets/taskin.jpg"
+  "image": "/assets/taskin.jpg"
 }
 
 ]
