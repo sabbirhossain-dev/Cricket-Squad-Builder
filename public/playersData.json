@@ -17,7 +17,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/virat-kohli.png"
+    "image": "../src/assets/virat.jpg"
   },
   {
     "id": 2,
@@ -37,7 +37,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/images/players/babar-azam.png"
+    "image": "../src/assets/babar.jpg"
   },
   {
     "id": 3,
@@ -57,7 +57,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/shakib-al-hasan.png"
+    "image": "../src/assets/shakib.jpg"
   },
   {
     "id": 4,
@@ -77,7 +77,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/jasprit-bumrah.png"
+    "image": "../src/assets/bumrah.jpg"
   },
   {
     "id": 5,
@@ -97,7 +97,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": false,
-    "image": "/images/players/ben-stokes.png"
+    "image": "../src/assets/stokes.jpg"
   },
   {
     "id": 6,
@@ -117,7 +117,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": false,
-    "image": "/images/players/kane-williamson.png"
+    "image": "../src/assets/williamson.jpg"
   },
   {
     "id": 7,
@@ -137,7 +137,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/images/players/rashid-khan.png"
+    "image": "../src/assets/rashid.jpg"
   },
   {
     "id": 8,
@@ -157,7 +157,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/images/players/joe-root.png"
+    "image": "../src/assets/root.jpg"
   },
   {
     "id": 9,
@@ -177,7 +177,7 @@
     "status": "Active",
     "isCaptain": true,
     "isFeatured": true,
-    "image": "/images/players/pat-cummins.png"
+    "image": "../src/assets/cummins.jpg"
   },
   {
     "id": 10,
@@ -197,7 +197,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/images/players/steve-smith.png"
+    "image": "../src/assets/smith.jpg"
   },
   {
     "id": 11,
@@ -217,7 +217,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/images/players/mohammad-rizwan.png"
+    "image": "../src/assets/rizwan.jpg"
   },
   {
     "id": 12,
@@ -237,7 +237,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/rohit-sharma.png"
+    "image": "../src/assets/rohit.jpg"
   },
   {
     "id": 13,
@@ -257,7 +257,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/travis-head.png"
+    "image": "../src/assets/head.jpg"
   },
   {
     "id": 14,
@@ -277,7 +277,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/jos-buttler.png"
+    "image": "../src/assets/buttler.jpg"
   },
   {
     "id": 15,
@@ -297,7 +297,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/shaheen-afridi.png"
+    "image": "../src/assets/shaheen.jpg"
   },
   {
     "id": 16,
@@ -317,7 +317,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/mitchell-starc.png"
+    "image": "/../src/assets/starc.jpg"
   },
   {
     "id": 17,
@@ -337,7 +337,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/hardik-pandya.png"
+    "image": "../src/assets/hardik.jpg"
   },
   {
     "id": 18,
@@ -357,7 +357,7 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": false,
-    "image": "/images/players/litton-das.png"
+    "image": "../src/assets/liton.jpg"
   },
   {
     "id": 19,
@@ -377,26 +377,28 @@
     "status": "Active",
     "isCaptain": false,
     "isFeatured": true,
-    "image": "/images/players/mustafizur-rahman.png"
+    "image": "../src/assets/mustafizur.jpg"
   },
   {
-    "id": 20,
-    "name": "Mehidy Hasan Miraz",
-    "shortName": "M. Hasan",
-    "origin": "Bangladesh",
-    "countryCode": "BAN",
-    "role": "All-rounder",
-    "battingStyle": "Right-hand bat",
-    "bowlingStyle": "Right-arm off break",
-    "price": 1000000,
-    "priceUnit": "USD",
-    "age": 29,
-    "jerseyNumber": 15,
-    "team": "Bangladesh",
-    "rating": 88,
-    "status": "Active",
-    "isCaptain": false,
-    "isFeatured": false,
-    "image": "/images/players/mehidy-hasan.png"
-  }
+    
+  "id": 20,
+  "name": "Taskin Ahmed",
+  "shortName": "T. Ahmed",
+  "origin": "Bangladesh",
+  "countryCode": "BAN",
+  "role": "Bowler",
+  "battingStyle": "Right-hand bat",
+  "bowlingStyle": "Right-arm fast",
+  "price": 900000,
+  "priceUnit": "USD",
+  "age": 31,
+  "jerseyNumber": 3,
+  "team": "Bangladesh",
+  "rating": 85,
+  "status": "Active",
+  "isCaptain": false,
+  "isFeatured": false,
+  "image": "../src/assets/taskin.jpg"
+}
+
 ]
