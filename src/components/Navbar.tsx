@@ -1,6 +1,6 @@
 import { GiTwoCoins } from "react-icons/gi";
 
-import logo from '../assets/logo.png'
+import logo from '../../public/assets/logo.png'
 
 const Navbar = () => {
     return (

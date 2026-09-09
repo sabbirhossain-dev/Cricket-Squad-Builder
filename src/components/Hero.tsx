@@ -1,5 +1,5 @@
-import shadow from "../assets/bg-shadow.png";
-import bannerImg from "../assets/banner-main.png";
+import shadow from "../../public/assets/bg-shadow.png";
+import bannerImg from "../../public/assets/banner-main.png";
 
 const Hero = () => {
   return (
