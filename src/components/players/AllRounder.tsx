@@ -8,7 +8,7 @@ type AllRounderType = {
 const AllRounder = ({players}:AllRounderType) => {
     const allRounder = players.filter((player)=>player.role === "All-rounder")
   return (
-    <div className="className = grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="className = grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {allRounder.map((player)=>(
             <PlayerCard key={player.id} {...player} />
        ) )}

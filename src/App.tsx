@@ -14,7 +14,7 @@ const App = () => {
   const playerPromise:Promise<PlayerType[]> = playerFetch()
   return (
     <>
-      <div className="container mx-auto">
+      <div className="">
         <Navbar />
         <Hero />
         <Suspense  fallback={

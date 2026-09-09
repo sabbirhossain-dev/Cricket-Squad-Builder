@@ -7,7 +7,7 @@ type BowlerType = {
 const Bowler = ({players}:BowlerType) => {
     const bowlers = players.filter((player)=>player.role === "Bowler")
   return (
-    <div className="className = grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="className = grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {bowlers.map((bowler)=>(
             <PlayerCard key={bowler.id} {...bowler} />
         ))}

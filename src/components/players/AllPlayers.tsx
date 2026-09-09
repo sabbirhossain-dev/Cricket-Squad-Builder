@@ -6,7 +6,7 @@ type AllPlayerType = {
 }
 const AllPlayers = ({players}:AllPlayerType) => {
   return (
-    <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {players.map(
           (player) => (
             <PlayerCard

@@ -17,7 +17,7 @@ const PlayerCard = ({
   origin,
 }: playerCardType) => {
   return (
-    <div className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
       
       {/* Image */}
       <div className="relative overflow-hidden">
@@ -48,7 +48,7 @@ const PlayerCard = ({
       <div className="p-5">
 
         {/* Origin & Rating */}
-        <div className="mb-4 flex items-center justify-between border-b border-gray-100 pb-4">
+        <div className="mb-4 flex items-center justify-between border-b border-gray-200 pb-4">
           <div className="flex items-center gap-1.5 text-sm text-gray-500">
             <IoFlag className="text-green-500" />
             <span>{origin}</span>

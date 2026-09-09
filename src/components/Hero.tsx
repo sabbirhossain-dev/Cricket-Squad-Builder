@@ -3,7 +3,7 @@ import bannerImg from "../../public/assets/banner-main.png";
 
 const Hero = () => {
   return (
-    <section className="my-3">
+    <section className="my-7">
       <div className="container mx-auto bg-black relative rounded-lg py-16">
         <img src={shadow} alt="shadow" className="h-full w-full absolute top-0 left-0 rounded-lg"/>
         <div className="flex flex-col justify-center items-center text-white">

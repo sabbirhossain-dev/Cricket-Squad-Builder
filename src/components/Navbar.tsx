@@ -4,7 +4,7 @@ import logo from '../../public/assets/logo.png'
 
 const Navbar = () => {
     return (
-        <div>
+        <div className=" sticky top-0 z-10 bg-white border-b border-gray-200">
             <nav className="container mx-auto py-3 flex justify-between gap-5 items-center">
                 <div className="img">
                     <img src={logo} alt="logo" />
