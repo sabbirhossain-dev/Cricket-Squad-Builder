@@ -108,9 +108,9 @@ const Players = ({ playerPromise,dollars,setDollars }: PlayersProps) => {
       {playerStatus === "available" && 
       <>
         {all && <AllPlayers players={players} dollars={dollars} setDollars={setDollars} />}
-        {batter && <Batter players={players} />}
-        {bowler && <Bowler players={players} />}
-        {allRounder && <AllRounder players={players} />}
+        {batter && <Batter players={players} dollars={dollars} setDollars={setDollars}/>}
+        {bowler && <Bowler players={players} dollars={dollars} setDollars={setDollars}/>}
+        {allRounder && <AllRounder players={players} dollars={dollars} setDollars={setDollars}/>}
     </>
     }
 
