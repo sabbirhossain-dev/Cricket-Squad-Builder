@@ -1,7 +1,22 @@
 import shadow from "../../public/assets/bg-shadow.png";
 import bannerImg from "../../public/assets/banner-main.png";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
-const Hero = () => {
+interface PropeTypes{
+  dollars:number;
+  setDollars:Dispatch<SetStateAction <number>>
+}
+const Hero = ({setDollars}:PropeTypes) => {
+  const [freeDollar, setFreeDollar] = useState(50000)
+  const [disable, setDisable] = useState(false)
+
+  const handleFreeDollars = ()=>{
+    setDollars((prevDollar)=> prevDollar + freeDollar)
+    toast.success(`You just got ${freeDollar} for free!`)
+    setFreeDollar(0)
+    setDisable(true)
+  }
   return (
     <section className="my-7">
       <div className="container mx-auto bg-black relative rounded-lg py-16">
@@ -10,8 +25,10 @@ const Hero = () => {
             <img src={bannerImg} alt="bannerImg" className="h-48 w-56 pb-5"/>
             <h1 className="font-bold text-[40px]">Assemble Your Ultimate Dream 11 Cricket Team</h1>
             <p className="text-[24px] opacity-70 py-3">Beyond Boundaries Beyond Limits</p>
+
             <div className="aura">
-         <button className="btn">Claim Free Credit</button>
+         <button className={`btn ${disable && "opacity-90 cursor-not-allowed"}`}     onClick={disable ? undefined : handleFreeDollars}
+ >{disable ?"Credit Claimed": "Claim Free Credit"}</button>
         </div>
         </div>
       </div>

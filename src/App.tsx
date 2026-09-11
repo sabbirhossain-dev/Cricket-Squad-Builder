@@ -19,7 +19,7 @@ const App = () => {
     <>
       <div className="">
         <Navbar dollars={dollars} setDollars={setDollars}/>
-        <Hero />
+        <Hero dollars={dollars} setDollars={setDollars} />
         <Suspense  fallback={
           <div className="container mx-auto py-10">
             <p className="text-center text-lg font-semibold text-gray-500">
