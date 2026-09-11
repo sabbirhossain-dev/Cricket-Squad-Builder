@@ -2,8 +2,13 @@ import { FaUser } from "react-icons/fa";
 import type { PlayerType } from "../../type/PlayerType";
 import { IoFlag } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
-type playerCardType = PlayerType;
+type PlayerPropsType = PlayerType & {
+  dollars: number;
+  setDollars: Dispatch<SetStateAction<number>>;
+};
 
 const PlayerCard = ({
   image,
@@ -15,12 +20,27 @@ const PlayerCard = ({
   rating,
   price,
   origin,
-}: playerCardType) => {
+  dollars,
+  setDollars
+}: PlayerPropsType) => {
+
+  const [choosePlayer,setChoosePlayer]= useState(false)
+
+  const handleChoosePlayer =()=>{
+    if(dollars < price){
+      toast.error('Insufficient balance')
+    }
+    else{
+    setChoosePlayer(true)
+    setDollars((prevDollar)=>prevDollar - price)
+    toast.success(`${name} has joined your squad!`)
+    }
+  }
   return (
-    <div className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+    <div className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg ">
       
       {/* Image */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden cursor-grab">
         <img
           src={image}
           alt={name}
@@ -36,10 +56,10 @@ const PlayerCard = ({
         </span>
 
         {/* Player name on image */}
-        <div className="absolute bottom-4 left-4 text-white">
+        <div className="absolute bottom-3 left-3 text-blue-800 opacity-90 bg-white py-1 px-3 rounded-md">
           <div className="flex items-center gap-2">
             <FaUser className="text-sm" />
-            <h3 className="text-xl font-bold">{name}</h3>
+            <h3 className="text-md font-bold">{name}</h3>
           </div>
         </div>
       </div>
@@ -95,7 +115,12 @@ const PlayerCard = ({
             </p>
           </div>
 
-          <button className="rounded-lg bg-green-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-green-600 hover:shadow-md active:scale-95">
+          <button type="button"  className={`rounded-lg px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300
+            ${
+              choosePlayer
+                ? "cursor-not-allowed bg-gray-600 text-gray-500 opacity-60"
+                : "cursor-pointer bg-green-500 hover:bg-green-600 hover:shadow-md active:scale-95"
+            }`} onClick={handleChoosePlayer} disabled={choosePlayer}>
             Choose Player
           </button>
         </div>

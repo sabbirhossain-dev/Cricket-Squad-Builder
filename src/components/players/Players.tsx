@@ -1,21 +1,25 @@
-import { use, useState } from "react";
+import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { PlayerType } from "../../type/PlayerType";
 import Batter from "./Batter";
 import AllPlayers from "./AllPlayers";
 import Bowler from "./Bowler";
 import AllRounder from "./AllRounder";
+import Selected from "./Selected";
 
 type PlayersProps = {
   playerPromise: Promise<PlayerType[]>;
+  dollars:number;
+  setDollars: Dispatch<SetStateAction<number>>
 };
 
-const Players = ({ playerPromise }: PlayersProps) => {
+const Players = ({ playerPromise,dollars,setDollars }: PlayersProps) => {
   const players = use(playerPromise);
 
   const [all,setAll] = useState(true)
   const [batter,setBatter] = useState(false)
   const [bowler,setBowler] = useState(false)
   const [allRounder,setAllRounder] = useState(false)
+  const [playerStatus, setPlayerStatus] = useState("available")
 
   const handleAll =()=>{
     setAll(true)
@@ -43,6 +47,11 @@ const Players = ({ playerPromise }: PlayersProps) => {
     setBowler(false)
     setAllRounder(true)
   }
+
+  const handleAvailable =(type:string)=>{
+    setPlayerStatus(type);
+  }
+
   return (
     <div className="container mx-auto my-10">
       
@@ -85,16 +94,27 @@ const Players = ({ playerPromise }: PlayersProps) => {
         </button>
       </div>
 
-      <div>
-        <button className="btn btn-soft btn-primary">Available</button>
-        <button className="btn btn-soft btn-secondary">Selected</button>
+      <div className="join">
+        {/* <button className="btn btn-soft btn-primary">Available</button> */}
+        <button className={`btn ${playerStatus === "available" ?  "btn-secondary":"btn-soft btn-secondary" } rounded-l-0`} onClick={()=>handleAvailable("available")}>Available</button>
+        <button className={`btn ${playerStatus === "selected" ? "btn-secondary":"btn-soft btn-secondary" } rounded-l-0`} onClick={()=>handleAvailable("selected")}>Selected</button>
       </div>
       </div>
 
-      {all && <AllPlayers players={players} />}
-      {batter && <Batter players={players} />}
-      {bowler && <Bowler players={players} />}
-      {allRounder && <AllRounder players={players} />}
+      <h2 className="text-2xl text-blue-700 pb-7 font-semibold opacity-80 text-center">
+        {playerStatus === "available" ? "Available Players" : "Selected Player"}
+      </h2>
+
+      {playerStatus === "available" && 
+      <>
+        {all && <AllPlayers players={players} dollars={dollars} setDollars={setDollars} />}
+        {batter && <Batter players={players} />}
+        {bowler && <Bowler players={players} />}
+        {allRounder && <AllRounder players={players} />}
+    </>
+    }
+
+    {playerStatus === "selected" && <Selected />}
       
       
 
